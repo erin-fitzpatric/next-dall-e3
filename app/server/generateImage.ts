@@ -15,6 +15,7 @@ export default async function generateImage(
       response_format: "url",
       size: "1024x1024",
     });
+    console.log(response.data[0].url);
     return response.data[0].url;
   } catch (error) {
     console.error(error);

@@ -7,6 +7,7 @@ import { LoadingButton } from "./ui/buttonVariants";
 import generateImage from "@/app/server/generateImage";
 import { useToast } from "./ui/use-toast";
 import { Card } from "./ui/card";
+import Image from "next/image";
 
 export default function ImageGenerator() {
   const [prompt, setPrompt] = useState<string>("");
@@ -62,7 +63,7 @@ export default function ImageGenerator() {
       {generatedImageUrl && (
         <div className="mt-8 mx-auto w-2/3">
           <Card className="p-2 bg-secondary shadow-md">
-            <img src={generatedImageUrl} alt="Generated Image" />
+            <Image src={generatedImageUrl} width={1024} height={1024} alt="generated image"></Image>
           </Card>
         </div>
       )}

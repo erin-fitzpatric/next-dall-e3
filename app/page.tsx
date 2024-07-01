@@ -12,7 +12,7 @@ export default function Home() {
 
       <div className="flex justify-center">
         <p className="text-lg mt-4 w-1/3 text-center">
-          Powered by OpenAI's GPT-3, this tool generates images based on your
+          Powered by OpenAI&apos;s GPT-3, this tool generates images based on your
           prompt. Try it out!
         </p>
       </div>
